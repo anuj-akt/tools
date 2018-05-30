@@ -1,0 +1,61 @@
+doctype html
+html(lang="en")
+	head
+		meta(charset="utf-8")
+		meta(http-equiv="X-UA-Compatible", content="IE=edge")
+		meta(name="viewport", content="width=device-width, initial-scale=1")
+		meta(name="description", content="")
+		meta(name="author", content="")
+		title Developer Tools
+		link(href="stylesheets/bootstrap.min.css", rel="stylesheet")
+		link(href="stylesheets/scrolling-nav.css", rel="stylesheet")
+	body#page-top(data-spy="scroll", data-target=".navbar-fixed-top")
+		nav.navbar.navbar-default.navbar-fixed-top(role="navigation")
+			.container
+				.navbar-header.page-scroll
+					button.navbar-toggle(type="button", data-toggle="collapse", data-target=".navbar-ex1-collapse")
+						span.sr-only Toggle navigation
+						span.icon-bar
+						span.icon-bar
+						span.icon-bar
+					a.navbar-brand.page-scroll(href="#page-top") Developer Tools
+				.collapse.navbar-collapse.navbar-ex1-collapse
+					ul.nav.navbar-nav
+						li
+							a.page-scroll(href="#xml") XML
+						li
+							a.page-scroll(href="#json") JSON
+						li
+							a.page-scroll(href="#intro") About
+		section#xml.about-section
+			.container
+				.row
+					.col-lg-12
+						h1 Play around with XML
+						textarea#input-xml(cols=100 rows=20)
+						p
+							a.btn.btn-default#validate-xml Validate
+							a.btn.btn-default#format-xml Format
+		section#json.about-section
+			.container
+				.row
+					.col-lg-12
+						h1 Play around with JSON
+						textarea#input-json(cols=100 rows=20)
+						p
+							a.btn.btn-default#validate-json Validate
+							a.btn.btn-default#format-json Format
+		section#intro.intro-section
+			.container
+				.row
+					.col-lg-12
+						h1 Free online tools for Developers
+						p
+							strong Validate and format   
+							a.btn.btn-default.page-scroll(href="#xml") XML
+							a.btn.btn-default.page-scroll(href="#json") JSON
+		script(src="javascripts/jquery.js")
+		script(src="javascripts/bootstrap.min.js")
+		script(src="javascripts/jquery.easing.min.js")
+		script(src="javascripts/scrolling-nav.js")
+		script(src="javascripts/tools/main.js")
